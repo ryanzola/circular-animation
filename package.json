@@ -1,0 +1,33 @@
+{
+  "name": "gravity",
+  "version": "1.0.0",
+  "description": "programming some gravity simulations",
+  "main": "canvas.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanzola/gravity.git"
+  },
+  "keywords": [
+    "gravity"
+  ],
+  "author": "ryanzola <ryanzola@me.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryanzola/gravity/issues"
+  },
+  "homepage": "https://github.com/ryanzola/gravity#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.15.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
