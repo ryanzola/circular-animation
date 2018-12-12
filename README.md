@@ -1,2 +1,1 @@
-# gravity
-Programming some gravity sims
+#Canvas Boilerplate
