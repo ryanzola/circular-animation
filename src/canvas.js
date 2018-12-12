@@ -23,7 +23,7 @@ const colors = [
   '#E7C0F7'
 ];
 const gravity = 1;
-const yFriction = 0.29;
+const yFriction = 0.79;
 const xFriction = 0.99;
 
 // Event Listeners
@@ -89,27 +89,22 @@ function Ball(x, y, dx, dy, radius, color) {
 
 // Implementation
 let ball;
-let ballArray;
+
 function init() {
-  ballArray = [];
-  for(var i = 0; i < 1000; i++) {
     let radius = utils.randomIntFromRange(10, 30);
     let x = utils.randomIntFromRange(radius, canvas.width - radius);
     let y = utils.randomIntFromRange(0, canvas.height - radius);
     let dx = utils.randomIntFromRange(-5, 5);
     let dy = utils.randomIntFromRange(-2, 2);
     let color = utils.randomColor(colors);
-    ballArray.push(new Ball(x, y, dx, dy, radius, color));
-  }
+    ball = new Ball(x, y, dx, dy, radius, color);
 }
 
 // Animation Loop
 function animate() {
   requestAnimationFrame(animate);
   c.clearRect(0, 0, canvas.width, canvas.height);
-  for (var i = 0; i < ballArray.length; i++) {
-    ballArray[i].update();
-  }
+  ball.update();
 }
 
 init();
